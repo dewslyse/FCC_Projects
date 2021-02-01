@@ -1,0 +1,18 @@
+body {
+    background: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: whitesmoke;
+    padding: 10px 0px 10px 0px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+

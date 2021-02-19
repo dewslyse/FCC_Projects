@@ -1,1 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
+body {
+    min-height: 100%;
+    margin: 0;  
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 0px;   
+    line-height: 0.25;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+}
+
+/* SEPARATORS */
+#subscribe-separator,
+#produce-separator {
+    width: 110px;
+    margin: auto;
+    background-color: #84bb29;
+    height: 4px;
+    border: none; 
+}
+
+/* BUTTONS */
+#hero-button,
+#produce-button,
+#farm-button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    background: #84bb29;
+    color: #fff;  
+    font-size: 1rem;
+    border: none; 
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+#header {  
+    width: 100%;
+    background-color: #f1f1f1;
+    top: 0;  
+    position:fixed; 
+    z-index: 2;
+}
+
+/* NAV SECTION */
+nav {  
+    display: block;
+    background-color: black;
+    width: 100%;  
+}
+
+#nav-bar {
+    width: 100%;
+    max-width: 1280px;
+    height: 75px;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    display: flex;  
+    justify-content: space-between;
+    cursor: default;
+}
+
+#logo-section {
+    display: flex;
+    position: relative;
+    left: -20px;
+    right: 0;  
+    top: -5px;
+}
+
+#header-img {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;  
+    max-width: 280px;
+    height: auto;   
+}
+
+#menu-section {
+    display: flex;  
+    justify-content: space-between;
+    margin-left: auto;
+    align-items: center;  
+    padding-right: 0;   
+    text-align: center;  
+}
+
+/* MENU ITEMS */
+.nav-link {
+    display: inline-flex;  
+    text-decoration: none;
+    margin: 0 0 0 40px;
+    text-align: left;  
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.menu-items:hover {
+    text-decoration: none;
+    color: #84bb29; 
+}
+
+/* HERO SECTION */
+#hero-section {
+    position: relative;
+    background-position: 80%;
+    overflow: hidden;
+    background-image: url(https://imgur.com/WmFtvwg.png);
+    background-color: black;  
+    background-repeat: no-repeat;
+    padding-top: 65px;
+}
+
+.hero {
+    height: 80vh;
+    min-height: 500px;
+    max-height: 864px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;   
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto; 
+    width: 100%;  
+}
+
+.hero-left-content {
+    min-width: 0;
+    width: 50%;  
+}
+
+.main-hero-title {
+    line-height: 1.25;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;   
+}
+
+#title-separator {
+    width: 110px;
+    margin-left: 0;
+    background-color: #84bb29;
+    height: 3px;
+    border: none;  
+}
+
+#button-wrapper {
+    margin: 80px 0 50px 0;   
+}
+
+
+/* OUR FARM SECTION */
+.our-farm-section {
+    background-color: #fff;   
+}
+
+.features-section {
+    display: grid;  
+    width: 100%;
+    grid-template-columns: 305px 305px 305px 305px;
+    grid-template-rows: 180px;
+    grid-column-gap: 20px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 20px 0;  
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 30vw;
+    color: #84bb29;
+}
+
+.icon-background {
+    background-color: rgba(86,178,89,.2);
+    padding: 20px;
+    border-radius: 300px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 150px;
+    width: 65vw;  
+    color: #000;
+}
+
+.feature-1,
+.feature-2,
+.feature-3,
+.feature-4 {   
+    border-radius: 10px;
+    margin: 20px 0;  
+}
+
+#our-farm-container {  
+    background-color: #f7f7e8;
+    padding: 70px 0; 
+    display: flex;
+    align-items: center;
+    flex-direction: row;  
+}
+
+.farm-container {
+    max-width: 1280px;
+    margin: auto; 
+    width: 100%; 
+    display: flex;
+    align-items: center;
+}
+  
+
+#farm-button-wrapper {
+    margin: 10px 0;  
+}
+
+#farm-separator {
+    width: 110px;
+    margin: 0;
+    background-color: #84bb29;
+    height: 4px;
+    border: none; 
+}
+
+.our-farm-text {
+    min-width: 0;
+    width: 90%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+}
+
+#farm-text-style {
+    margin: 20px 20px 40px 0;
+    line-height: 1.5;
+    font-size: 1.1rem;  
+}
+
+.our-farm-video {
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+    border-bottom: 4px solid #84bb29;  
+    padding-bottom: 5px; 
+}
+
+#video {
+    width: 640px;
+    height: 360px;  
+    margin-bottom: 3px;
+    border: 0px;
+}  
+
+/* PRODUCE SECTION */
+#our-produce-section {    
+    text-align: center;  
+    background-color: #fff;
+    color: #000;
+    padding: 70px 0 20px 0;
+}
+
+.produce-section {
+    display: grid;  
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 300px;
+    grid-column-gap: 5%;
+    max-width: 1280px;
+    margin: auto;  
+    align-items: center;
+    justify-items: center;
+}
+
+.produce-1,
+.produce-2,
+.produce-3 {  
+    background: #000; 
+    border-radius: 10px;
+    margin: 10px 0;    
+}
+
+.produce-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;    
+}
+
+#image-1,
+#image-2,
+#image-3 {
+    height: 200px;
+    border-radius: 50%;
+}
+
+#produce-button-wrapper {
+    margin: 50px 0;  
+}
+
+/* SUBCRIPTION SECTION */
+#subscription-section {
+    text-align: center;  
+    background-color: #561e54;
+    color: #fff;
+    padding: 70px 0;
+}
+
+#quote-wrapper {
+    margin: 20px 0 40px;
+}
+
+#form {
+    display: inline-flex;
+    flex-flow: row wrap;  
+}
+
+#email {
+    margin: auto;
+    padding: 10px 50px 10px 10px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    border: solid #84bb29 1.5px;
+    border-radius: 7px;
+}
+
+#submit {
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin-left: 5px;  
+    color: white;
+    background-color: #84bb29;  
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    border: solid #84bb29 1.5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+#footer {
+    line-height: 50px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-top: 1pt solid #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-content {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px;
+    align-items: center;
+}
+
+.footer-content-left {
+    text-align: left;
+}
+
+.footer-content-right {   
+    text-align: right; 
+}

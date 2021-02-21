@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    min-height: 100%;
     margin: 0;  
 }
 
@@ -55,46 +58,44 @@ p {
 }
 
 /* NAV SECTION */
-nav {  
-    display: block;
-    background-color: black;
-    width: 100%;  
-}
-
 #nav-bar {
     width: 100%;
     max-width: 1280px;
-    height: 75px;
+   /* height: 75px;*/
     background-color: #f1f1f1;
-    margin: 0 auto;
+    margin: auto;
     display: flex;  
     justify-content: space-between;
     cursor: default;
+    align-items: center;
 }
 
 #logo-section {
     display: flex;
     position: relative;
-    left: -20px;
-    right: 0;  
-    top: -5px;
+    left: -20px;   
 }
 
 #header-img {
-    display: flex;
-    align-items: center;
-    flex: 0 0 auto;  
+    /*display: flex;
+    align-items: center;  */  
     max-width: 280px;
     height: auto;   
 }
 
-#menu-section {
+.menu-section ul {
     display: flex;  
-    justify-content: space-between;
-    margin-left: auto;
-    align-items: center;  
-    padding-right: 0;   
-    text-align: center;  
+    margin: 0;
+    padding: 0;    
+}
+
+.menu-section li {
+    list-style: none;
+}
+
+.menu-section li a {
+    text-decoration: none;
+    display: block;    
 }
 
 /* MENU ITEMS */
@@ -109,9 +110,55 @@ nav {
     color: black;
 }
 
-.menu-items:hover {
-    text-decoration: none;
+.nav-link:hover {    
     color: #84bb29; 
+}
+
+.hamburger-button {
+    position: absolute;    
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;   
+}
+
+.hamburger-button .burger {
+    height: 3px;
+    width: 100%;
+    background-color: black;    
+}
+
+@mediaaaaaa (max-width: 992px) {
+    .hamburger-button {
+        display: flex;
+    }
+
+    .menu-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 65px;
+        height: 100%;
+        width: 100%;
+       
+    }
+
+    .menu-section ul {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 40px;
+        
+    }
+
+    .menu-section li {
+        padding: 1rem;
+        background-color: #f1f1f1;
+        
+    }
+
+
 }
 
 /* HERO SECTION */
@@ -169,12 +216,44 @@ nav {
 
 /* OUR FARM SECTION */
 .our-farm-section {
-    background-color: #fff;   
+    background-color: #fff;      
 }
 
-.features-section {
-    display: grid;  
-    width: 100%;
+.icon-box-section {
+    display: flex;
+    position: relative;
+    /*margin-left: auto;
+    margin-right: auto; */
+}
+
+@media (max-width: 991px) {
+    .icon-box-section {
+        flex-wrap: wrap; 
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    .features-section {
+        flex-wrap: wrap; 
+        display: flex;
+        width: 50%;
+        position: relative;
+
+    }
+
+    .feature-1,
+    .feature-2,
+    .feature-3,
+    .feature-4 {   
+        width: 50%;   
+        position: relative;
+    }
+
+}
+
+.features-sectionnnnnnnnn {
+    display: grid;      
     grid-template-columns: 305px 305px 305px 305px;
     grid-template-rows: 180px;
     grid-column-gap: 20px;
@@ -183,9 +262,17 @@ nav {
     padding: 20px 0;  
 }
 
+.features-section {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+
 .icon-box {
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 .icon {
@@ -199,7 +286,7 @@ nav {
 .icon-background {
     background-color: rgba(86,178,89,.2);
     padding: 20px;
-    border-radius: 300px;
+    border-radius: 50%;
 }
 
 .description {
@@ -208,7 +295,7 @@ nav {
     justify-content: center;
     align-items: flex-start;
     height: 150px;
-    width: 65vw;  
+    width: 65vw;
     color: #000;
 }
 
@@ -217,7 +304,8 @@ nav {
 .feature-3,
 .feature-4 {   
     border-radius: 10px;
-    margin: 20px 0;  
+    margin: 20px 0;   
+    width: 25%;    
 }
 
 #our-farm-container {  
@@ -337,7 +425,6 @@ nav {
 
 #form {
     display: inline-flex;
-    flex-flow: row wrap;  
 }
 
 #email {
@@ -385,4 +472,67 @@ nav {
 
 .footer-content-right {   
     text-align: right; 
+}
+
+
+@media (max-width: 640px) {
+    h2 {
+        font-size: 2rem;
+    }
+    #quote-wrapper {        
+        margin: 30px 40px;
+    }
+    #form {  
+        display: flex;      
+        flex-direction: column;              
+    }
+    #email {
+        text-align: center;
+        padding: 10px 30px;  
+        box-sizing: border-box;    
+        width: 60%;    
+    }
+    #submit { 
+        margin: 30px auto 0 auto;
+        width: 40%;
+        text-align: center;
+        padding: 10px;
+    }
+    .footer-content {        
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 50px;
+        align-items: center;
+    }
+    .footer-content-left,
+    .footer-content-right {
+        text-align: center;
+    }   
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    h2 {
+        font-size: 2rem;
+    }
+    #quote-wrapper {        
+        margin: 30px 40px;
+    }
+    #form {  
+        display: flex;      
+        flex-direction: column;              
+    }
+    #email {
+        text-align: center;
+        padding: 10px 30px;  
+        box-sizing: border-box;    
+        width: 60%;    
+    }
+    #submit { 
+        margin: 30px auto 0 auto;
+        width: 40%;
+        text-align: center;
+        padding: 10px;
+    }
+    .footer-content {        
+        margin: 0 24px;
+    }
 }

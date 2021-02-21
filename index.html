@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         <link rel="stylesheet" href="landing.css">
+        <script src="landooing.js" defer></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <script src="https://kit.fontawesome.com/861ecf43a0.js" crossorigin="anonymous"></script>
         <title>Product Landing Page - farmFRESH</title>
@@ -19,14 +20,21 @@
                 </a>     
             </div>
 
-            <div id="menu-section">
-                <div>
-                    <a class="nav-link" href="#hero-section">Home</a>
-                    <a class="nav-link" href="#our-farm-container">Our Farm</a>
-                    <a class="nav-link" href="#our-produce-section">Our Produce</a>
-                    <a class="nav-link" href="#subscription-section">Subscribe</a>
-                </div>
+            <a href="#" class="hamburger-button">
+                <span class="burger"></span>
+                <span class="burger"></span>
+                <span class="burger"></span>
+            </a>
+
+            <div class="menu-section">
+                <ul>
+                    <li><a class="nav-link" href="#hero-section">Home</a></li>
+                    <li><a class="nav-link" href="#our-farm-container">Our Farm</a></li>
+                    <li><a class="nav-link" href="#our-produce-section">Our Produce</a></li>
+                    <li><a class="nav-link" href="#subscription-section">Subscribe</a></li>
+                </ul>                
             </div>
+            
         </nav>
     </header>
     
@@ -41,73 +49,75 @@
                     <div id="button-wrapper">
                         <button id="hero-button">Order now</button>
                     </div>         
-                </div> 
+                </div>                 
             </div>      
         </div>    
         </section>
       
         <!-- OUR FARM SECTION -->
         <section class="our-farm-section"> 
-        <div class="features-section">
-            <div class="feature-1">
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="icon-background">
-                            <i class="fas fa-2x fa-leaf"></i>
-                        </span>
+            <div class="icon-box-section">
+                <div class="features-section">
+                    <div class="feature-1">
+                        <div class="icon-box">
+                            <div class="icon">
+                                <span class="icon-background">
+                                    <i class="fas fa-2x fa-leaf"></i>
+                                </span>
+                            </div>
+                            <div class="description">
+                                <h3>Certified Organic</h3>
+                                <p>100% Guarantee</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="description">
-                        <h3>Certified Organic</h3>
-                        <p>100% Guarantee</p>
+          
+                    <div class="feature-2">
+                        <div class="icon-box">
+                            <div class="icon">
+                                <span class="icon-background">
+                                    <i class="fas fa-2x fa-flask"></i>
+                                </span>
+                            </div>
+                            <div class="description">
+                                <h3>Chemical-Free</h3>
+                                <p>No contamitants</p>
+                            </div>
+                        </div>
                     </div>
+          
+                    <div class="feature-3">
+                        <div class="icon-box">
+                            <div class="icon">  
+                                <span class="icon-background">
+                                    <i class="fas fa-2x fa-carrot"></i>
+                                </span>
+                            </div>
+                            <div class="description">
+                                <h3>Fresh & Healthy</h3>
+                                <p>All year round</p>
+                            </div>
+                        </div>
+                    </div>
+          
+                    <div class="feature-4">
+                        <div class="icon-box">
+                            <div class="icon">  
+                                <span class="icon-background">
+                                    <i class="fas fa-2x fa-shopping-basket"></i>
+                                </span>
+                            </div>
+                            <div class="description">
+                                <h3>Quality Produce</h3>
+                                <p>At lowest price</p>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
             </div>
-          
-            <div class="feature-2">
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="icon-background">
-                            <i class="fas fa-2x fa-flask"></i>
-                        </span>
-                    </div>
-                    <div class="description">
-                        <h3>Chemical-Free</h3>
-                        <p>No contamitants</p>
-                    </div>
-                </div>
-            </div>
-          
-            <div class="feature-3">
-                <div class="icon-box">
-                    <div class="icon">  
-                        <span class="icon-background">
-                            <i class="fas fa-2x fa-carrot"></i>
-                        </span>
-                    </div>
-                    <div class="description">
-                        <h3>Fresh & Healthy</h3>
-                        <p>All year round</p>
-                    </div>
-                </div>
-            </div>
-          
-            <div class="feature-4">
-                <div class="icon-box">
-                    <div class="icon">  
-                        <span class="icon-background">
-                            <i class="fas fa-2x fa-shopping-basket"></i>
-                        </span>
-                    </div>
-                    <div class="description">
-                        <h3>Quality Produce</h3>
-                        <p>At lowest price</p>
-                    </div>
-                </div>
-            </div>    
-        </div>
         
-        <div id="our-farm-container">
-            <div class="farm-container">
+            <div id="our-farm-container">
+                <div class="farm-container">
                 <div>
                     <div class="our-farm-text">
                         <hr id="farm-separator">
@@ -150,7 +160,7 @@
             
                 <div>
                     <a href="#">
-                        <img id="image-3" src="https://image.freepik.com/free-photo/pyramid-brown-eggs-isolated-white_221436-209.jpg" alt="Fruits">
+                        <img id="image-3" src="https://image.freepik.com/free-photo/pyramid-brown-eggs-isolated-white_221436-209.jpg" alt="Eggs">
                     </a>          
                     <h3 class="produce-text">Eggs</h3> 
                 </div>

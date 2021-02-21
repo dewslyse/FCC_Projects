@@ -61,7 +61,7 @@ p {
 #nav-bar {
     width: 100%;
     max-width: 1280px;
-   /* height: 75px;*/
+    height: 100px;
     background-color: #f1f1f1;
     margin: auto;
     display: flex;  
@@ -76,9 +76,7 @@ p {
     left: -20px;   
 }
 
-#header-img {
-    /*display: flex;
-    align-items: center;  */  
+#header-img {    
     max-width: 280px;
     height: auto;   
 }
@@ -116,7 +114,7 @@ p {
 
 .hamburger-button {
     position: absolute;    
-    right: 1rem;
+    right: 2rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -131,41 +129,10 @@ p {
     background-color: black;    
 }
 
-@mediaaaaaa (max-width: 992px) {
-    .hamburger-button {
-        display: flex;
-    }
-
-    .menu-section {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 65px;
-        height: 100%;
-        width: 100%;
-       
-    }
-
-    .menu-section ul {
-        flex-direction: column;
-        width: 100%;
-        padding-top: 40px;
-        
-    }
-
-    .menu-section li {
-        padding: 1rem;
-        background-color: #f1f1f1;
-        
-    }
-
-
-}
-
 /* HERO SECTION */
 #hero-section {
     position: relative;
-    background-position: 80%;
-    overflow: hidden;
+    background-position: 80%;   
     background-image: url(https://imgur.com/WmFtvwg.png);
     background-color: black;  
     background-repeat: no-repeat;
@@ -179,7 +146,7 @@ p {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: flex-start;   
+    justify-content: flex-start;
 }
 
 .container {
@@ -188,9 +155,9 @@ p {
     width: 100%;  
 }
 
-.hero-left-content {
+.hero-left-content {    
     min-width: 0;
-    width: 50%;  
+    width: 50%;      
 }
 
 .main-hero-title {
@@ -213,6 +180,12 @@ p {
     margin: 80px 0 50px 0;   
 }
 
+#hero-image {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 
 /* OUR FARM SECTION */
 .our-farm-section {
@@ -222,37 +195,12 @@ p {
 .icon-box-section {
     display: flex;
     position: relative;
-    /*margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
 }
 
-@media (max-width: 991px) {
-    .icon-box-section {
-        flex-wrap: wrap; 
-        display: flex;
-        width: 100%;
-        position: relative;
-    }
-
-    .features-section {
-        flex-wrap: wrap; 
-        display: flex;
-        width: 50%;
-        position: relative;
-
-    }
-
-    .feature-1,
-    .feature-2,
-    .feature-3,
-    .feature-4 {   
-        width: 50%;   
-        position: relative;
-    }
-
-}
-
-.features-sectionnnnnnnnn {
+.features-section {
     display: grid;      
     grid-template-columns: 305px 305px 305px 305px;
     grid-template-rows: 180px;
@@ -261,14 +209,6 @@ p {
     margin: auto;
     padding: 20px 0;  
 }
-
-.features-section {
-    display: flex;
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-}
-
 
 .icon-box {
     display: flex;
@@ -304,8 +244,7 @@ p {
 .feature-3,
 .feature-4 {   
     border-radius: 10px;
-    margin: 20px 0;   
-    width: 25%;    
+    margin: 20px 0;    
 }
 
 #our-farm-container {  
@@ -322,8 +261,7 @@ p {
     width: 100%; 
     display: flex;
     align-items: center;
-}
-  
+}  
 
 #farm-button-wrapper {
     margin: 10px 0;  
@@ -385,14 +323,6 @@ p {
     margin: auto;  
     align-items: center;
     justify-items: center;
-}
-
-.produce-1,
-.produce-2,
-.produce-3 {  
-    background: #000; 
-    border-radius: 10px;
-    margin: 10px 0;    
 }
 
 .produce-text {
@@ -474,11 +404,136 @@ p {
     text-align: right; 
 }
 
-
+/* MEDIA QUERRIES */
 @media (max-width: 640px) {
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-left: 12px;
+        margin-right: 12px;
     }
+
+    /* Hero section */
+    .container {
+        width: 90%;        
+    }
+    #hero-section {
+        
+        background-size: 45%;         
+        background-position-x: center;    
+        background-position-y: 95%;  
+    }
+    .hero {
+        height: 60vh;
+    }
+    .hero-left-content {
+        width: 100%;
+        margin-top: -120px;        
+    }    
+    .main-hero-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    #title-separator {
+        margin: auto;
+    }
+    #hero-button {        
+        margin: 30px auto 0 auto;
+        width: 100%;
+        font-size: 0.9rem;       
+    }
+    #button-wrapper {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 2rem;        
+    }
+    
+    /* Icon box section */
+    .icon-box-section {
+        justify-content: center;
+        padding: 30px 0;
+        margin-top: 50px;
+    }
+    .features-section {            
+        display: grid;
+        grid-template-columns: 100%; 
+        width: 100%;
+        padding: 0;   
+        margin-right: auto;
+        margin-left: auto; 
+    } 
+    .feature-2,
+    .feature-3,
+    .feature-4 {
+        margin-top: 40px;        
+    }
+    .feature-1 {
+        margin: 0;
+    }
+    .icon-box {
+        display: grid;
+        justify-content: center;        
+    }
+    .icon {
+        display: grid;        
+        width: auto;
+    }  
+    .description {        
+        flex-direction: column;
+        height: 100px;
+        width: 100%;        
+    }
+    .description h3 {
+        font-size: 1.3rem;
+        line-height: 1.2;          
+        margin-top: 5px;       
+    }
+    .description p {
+        display: flex;
+        margin-top: 10px;         
+        margin: 0 auto;  
+    }    
+    .icon.icon-background {
+        padding: 15px;        
+    }
+
+    /* Our Farm section */
+    #farm-separator {
+        margin: auto;
+    }
+    .farm-container {          
+        align-items: center;
+        flex-direction: column;          
+        width: 90%;
+        justify-content: center;        
+    }
+    .our-farm-text {
+        width: 100%;
+        text-align: center;
+    }
+    #farm-text-style {
+        margin: auto 12px 20px;
+        font-size: 1rem;
+    }
+    .our-farm-video {
+        margin-top: 50px;
+    }
+
+    /* Produce section */
+    .produce-section {        
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 30px;            
+    }
+    #image-3 {
+        height: 180px;
+        border-radius: 50%;
+    }
+    .produce-text {
+        font-size: 1.2rem;
+        margin-top: -20px;
+    }
+
+    /* Subscription section */
     #quote-wrapper {        
         margin: 30px 40px;
     }
@@ -498,6 +553,7 @@ p {
         text-align: center;
         padding: 10px;
     }
+    /*footer section*/
     .footer-content {        
         grid-template-columns: 100%;
         grid-template-rows: 50px 50px;
@@ -511,8 +567,139 @@ p {
 
 @media (min-width: 641px) and (max-width: 960px) {
     h2 {
-        font-size: 2rem;
+        font-size: 2rem;        
     }
+
+    /* Header section */
+    #header-image {
+        max-width: 240px;
+    }
+    #nav-bar {
+        width: 90%;
+    }
+    .hamburger-button {
+        display: flex;
+    }
+    .menu-section {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 65px;
+        height: 100%;
+        width: 100%;  
+        margin-right: -45px;     
+    }
+
+    .menu-section ul {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 40px;        
+    }
+
+    .menu-section li {
+        padding: 1rem;
+        background-color: #f1f1f1;   
+        width: 100%;     
+    }
+}
+
+    /* Hero section */
+    #hero-section {
+        position: relative;
+        background-size: 45%;
+        background-position: 95%;        
+    }
+    .hero {
+        height: 60vh;
+    }
+    .container {
+        width: 90%;
+    }
+    .main-hero-title {
+        font-size: 2.5rem;
+    }
+
+    /* Icon box section */
+    .icon-box-section {        
+        justify-content: center;
+        padding: 30px 0;
+        margin-top: 50px;
+    }
+    .features-section {            
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto auto;
+        width: 80%;
+        padding: 0;   
+        margin-right: auto;
+        margin-left: auto; 
+    }    
+    .icon-box {
+        display: grid;
+        justify-content: center;        
+    }
+    .icon {
+        display: grid;        
+        width: auto;
+    }  
+    .description {        
+        flex-direction: column;
+        height: 100px;
+        width: 100%;        
+    }
+    .description h3 {
+        font-size: 1.3rem;
+        line-height: 1.2;          
+        margin-top: 5px;       
+    }
+    .description p {
+        display: flex;
+        margin-top: 10px;         
+        margin: 0 auto;  
+    }    
+    .icon.icon-background {
+        padding: 20px;        
+    }
+
+    /* Our Farm section */
+    #farm-separator {
+        margin: auto;
+    }
+    .farm-container {          
+        align-items: center;
+        flex-direction: column;          
+        width: 90%;
+        justify-content: center;        
+    }
+    .our-farm-text {
+        width: 100%;
+        text-align: center;
+    }
+    #farm-text-style {
+        margin: auto 24px 20px;
+    }
+    .our-farm-video {
+        margin-top: 50px;        
+    }
+    #video {
+        width: 100%;
+    }
+
+    /* Produce section */
+    .produce-section {
+        margin-top: -40px;
+    }
+    #image-3 {
+        height: 180px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    .produce-text {
+        font-size: 1.3rem;
+        margin-top: -20px;
+    }
+
+    /* Subscription section */
     #quote-wrapper {        
         margin: 30px 40px;
     }
@@ -528,11 +715,96 @@ p {
     }
     #submit { 
         margin: 30px auto 0 auto;
-        width: 40%;
+        width: 30%;
         text-align: center;
         padding: 10px;
     }
+    /*footer section*/
     .footer-content {        
         margin: 0 24px;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1279px) {
+    h2 {
+        font-size: 2rem;        
+    }
+    /* Header Section */
+    #nav-bar {
+        width: 90%;        
+    }    
+
+    /* Hero Section */
+    #hero-section {
+        background-position: 90%;
+    }
+    .container {
+        width: 90%;
+    }
+
+    /* Icon box section */
+    .icon-box-section {        
+        justify-content: center;
+        padding: 30px 0;
+        margin-top: 50px;
+    }
+    .features-section {            
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%; 
+        grid-template-rows: auto auto;
+        width: 80%;
+        padding: 0;   
+        margin-right: auto;
+        margin-left: auto; 
+    }    
+    .icon-box {
+        display: grid;
+        justify-content: center;        
+    }
+    .icon {
+        display: grid;        
+        width: auto;
+    }  
+    .description {        
+        flex-direction: column;
+        height: 100px;
+        width: 100%;        
+    }
+    .description h3 {
+        font-size: 1.3rem;
+        line-height: 1.2;          
+        margin-top: 5px;       
+    }
+    .description p {
+        display: flex;
+        margin-top: 10px;         
+        margin: 0 auto;  
+    }    
+    .icon.icon-background {
+        padding: 20px;        
+    }
+
+    /* Our Farm section */
+    #farm-separator {
+        margin: auto;
+    }
+    .farm-container {          
+        align-items: center;
+        flex-direction: column;          
+        width: 90%;
+        justify-content: center;        
+    }
+    .our-farm-text {
+        width: 100%;
+        text-align: center;
+    }
+    #farm-text-style {
+        margin: auto 24px 20px;
+    }
+    .our-farm-video {
+        margin-top: 50px;        
+    }
+    #video {
+        width: 100%;
     }
 }

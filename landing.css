@@ -427,7 +427,8 @@ p {
         display: flex;
     }
     #nav-bar {
-        width: 90%;             
+        width: 90%;  
+        height: 80px;           
     }
     .hamburger-button {
         display: flex;

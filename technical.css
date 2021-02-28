@@ -1,0 +1,50 @@
+body {
+    background-color: #090e11;    
+}
+
+.container {
+    max-width: 1920px;
+    height: 100vh;
+    padding: 10px 0;
+    margin: auto;
+    background-color: white;
+}
+
+.top-nav {
+    height: 65px;
+    background-color: #2a2f32;
+    color: white;
+    display: flex;     
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+}
+
+#footer {
+    line-height: 50px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-top: 1pt solid #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.footer-content {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px;
+    align-items: center;
+}
+
+.footer-content-left {
+    text-align: left;
+}
+
+.footer-content-right {   
+    text-align: right; 
+}

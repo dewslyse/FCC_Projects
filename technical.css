@@ -4,6 +4,10 @@ body {
     margin: 0;  
 }
 
+header {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .top-nav {
     height: 65px;
     background-color: #2a2f32;
@@ -19,7 +23,7 @@ body {
     margin-left: 25%;  
 }
 
-aside {
+#navbar {
     background-color: lawngreen;
     width: 25%;
     height: 100vh;
@@ -28,18 +32,31 @@ aside {
     left: 0;
 }
 
-#navbar {
-    margin-left: 20px;
-}
-
 #nav-caption {
     height: 65px;
     background-color: blue;
-    font-size: 1.3rem;
+    font-size: 2rem;
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 20px;  
+    border-bottom: .5px solid blue;  
+}
+
+.nav-link {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
+    text-decoration: none;    
+}
+
+#navbar li {
+    list-style: none;
+    height: 45px;
+}
+
+#navbar li:hover {
+    color: black;
+    cursor: pointer;
 }
 
 main {

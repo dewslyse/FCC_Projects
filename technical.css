@@ -6,6 +6,7 @@ body {
 
 header {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
 }
 
 .top-nav {
@@ -43,9 +44,13 @@ header {
     border-bottom: .5px solid blue;  
 }
 
+#nav-link-section {
+    margin-top: 50px;
+}
+
 .nav-link {
     font-family: 'Source Code Pro', monospace;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-decoration: none;    
 }
 
@@ -59,13 +64,8 @@ header {
     cursor: pointer;
 }
 
-main {
-    width: 75%;
-    margin-left: 25%;
-}
-
-#main-doc {
-    margin: 0 50px;
+#main-doc {    
+    margin: 30px 40px 30px 28%;
 }
 
 #footer {

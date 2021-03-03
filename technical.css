@@ -86,6 +86,12 @@ section p {
     margin: 50px 0;
 }
 
+.main-section header h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    color: red;
+}
+
 samp {
     font-weight: bold;
     font-size: 1.1rem;

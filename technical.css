@@ -9,6 +9,12 @@ header {
     font-size: 1.5rem;
 }
 
+section p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 .top-nav {
     height: 65px;
     background-color: #2a2f32;
@@ -45,27 +51,49 @@ header {
 }
 
 #nav-link-section {
-    margin-top: 50px;
+    margin-top: 50px;    
 }
 
 .nav-link {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.3rem;
-    text-decoration: none;    
+    text-decoration: none; 
+    color: white;     
+}
+
+.nav-link:hover {
+    color: black;
 }
 
 #navbar li {
     list-style: none;
     height: 45px;
+    text-decoration: none;
+    color: white;
 }
 
-#navbar li:hover {
+/*#navbar li:hover {
     color: black;
     cursor: pointer;
-}
+}*/
 
 #main-doc {    
     margin: 30px 40px 30px 28%;
+}
+
+.main-section {
+    background-color: burlywood;
+    margin: 50px 0;
+}
+
+samp {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+section li {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
 }
 
 #footer {

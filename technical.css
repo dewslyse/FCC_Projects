@@ -97,6 +97,26 @@ samp {
     font-size: 1.1rem;
 }
 
+mark {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    font-size: 0.9rem;
+    background-color: #f4f4f4;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+code {
+    background-color: #f4f4f4;
+    color: black;
+    display: block;
+    line-height: 2;
+    border-radius: 5px;
+    margin: 0 10px;
+    white-space: pre-line;
+    padding: 10px;
+}
+
 section li {
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.5;

@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #090e11; 
-    color: white; 
+    background-color: #eeeee6; 
+    color: black; 
     margin: 0;  
 }
 
@@ -12,12 +16,12 @@ header {
 section p {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .top-nav {
     height: 65px;
-    background-color: #2a2f32;
+    background-color: white;
     color: white;
     display: flex;     
     flex-direction: row;
@@ -31,7 +35,7 @@ section p {
 }
 
 #navbar {
-    background-color: lawngreen;
+    background-color: #2a2f32;
     width: 25%;
     height: 100vh;
     position: fixed;
@@ -41,39 +45,43 @@ section p {
 
 #nav-caption {
     height: 65px;
-    background-color: blue;
-    font-size: 2rem;
+    background-color: white;    
+    font-size: 2.5rem;
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    padding-left: 20px;  
-    border-bottom: .5px solid blue;  
+    padding-left: 20px;      
 }
 
 #nav-link-section {
-    margin-top: 50px;    
+    margin-top: 50px;       
+    max-width: 90%;      
+    padding: 0 15px 0 30px;     
 }
 
 .nav-link {
     font-family: 'Source Code Pro', monospace;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-decoration: none; 
-    color: white;     
+    color: white;       
+    padding-bottom: 50px;    
 }
 
 .nav-link:hover {
-    color: black;
+    color: #f54d27;    
 }
 
 #navbar li {
-    list-style: none;
-    height: 45px;
+    list-style: none;    
     text-decoration: none;
-    color: white;
+    color: white;    
+    margin: 20px 0;
+    /*border: solid 1pt white;*/
 }
 
 #navlogo {
-    margin-right: 5px;
+    margin-right: 10px;
+    color: #f54d27;
 }
 
 #main-doc {    
@@ -81,15 +89,23 @@ section p {
 }
 
 .main-section {
-    background-color: burlywood;
+    background-color: none;
     margin: 50px 0;
     padding-bottom: 10px
 }
 
 .main-section header h2 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5rem;
-    color: red;
+    font-size: 2rem;
+    color: #f54d27;
+    font-weight: 500;
+}
+
+.main-section h3 {
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 30px;
 }
 
 samp {
@@ -99,22 +115,23 @@ samp {
 
 mark {
     font-family: 'Source Code Pro', monospace;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.9rem;
-    background-color: #f4f4f4;
+    background-color: #d6d6d6;
     padding: 0 2px;
     border-radius: 2px;
 }
 
 code {
-    background-color: #f4f4f4;
-    color: black;
+    background-color: #2a2f32;
+    color: white;
     display: block;
     line-height: 1.8;
     border-radius: 5px;
     margin: 0 10px;
     white-space: pre-line;
     padding: 10px 15px;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .code-justification {
@@ -127,12 +144,16 @@ section li {
     line-height: 1.5;
 }
 
+.bottom-space {
+    margin-bottom: 30px;
+}
+
 #footer {
     line-height: 50px;
     width: 75%;
     margin-left: 25%;    
-    background-color: #f1f1f1;
-    border-top: 1pt solid #000;
+    background-color: white;
+    border-top: 0.5pt solid #2a2f32;
     font-family: 'Raleway', sans-serif;
     color: black;
 }
@@ -142,7 +163,7 @@ section li {
     grid-template-columns: 50% 50%;
     grid-template-rows: 60px;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 60px;
 }
 
 .footer-content-left {

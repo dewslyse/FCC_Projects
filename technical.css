@@ -22,7 +22,7 @@ section p {
 .top-nav {
     height: 65px;
     background-color: white;
-    color: white;
+    color: black;
     display: flex;     
     flex-direction: row;
     justify-content: center;
@@ -84,6 +84,24 @@ section p {
     color: #f54d27;
 }
 
+.hamburger-button {
+    position: absolute;    
+    right: 2rem;
+    top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;       
+}
+
+.hamburger-button .burger {
+    height: 3px;
+    width: 100%;
+    background-color: black;    
+}
+
 #main-doc {    
     margin: 30px 40px 30px 28%;
 }
@@ -132,6 +150,8 @@ code {
     white-space: pre-line;
     padding: 10px 15px;
     font-family: 'Source Code Pro', monospace;
+    word-break: break-all;
+    word-wrap: normal;
 }
 
 .code-justification {
@@ -172,4 +192,90 @@ section li {
 
 .footer-content-right {   
     text-align: right; 
+}
+
+/* Smaller Devices */
+@media (min-width: 640px) and (max-width: 992px) {
+    .top-nav {
+        display: none;
+    }
+
+    #navbar {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 70px;        
+    }
+
+    #nav-caption {
+        font-size: 2rem;        
+        padding-left: 24px;   
+        height: 70px;   
+    }
+
+    #nav-link-section {
+        display: none;
+    }
+
+    #main-doc {    
+        margin: 100px 30px 50px 30px;
+    }
+
+    .main-section header h2 {        
+        font-size: 1.9rem;        
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .top-nav {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: flex;
+    }
+
+    #navbar {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 65px;        
+    }
+
+    #nav-caption {
+        font-size: 2rem;        
+        padding-left: 12px;      
+    }
+
+    #nav-link-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2a2f32;
+        align-items: center;
+        margin-top: 0;
+        padding-right: 2.5rem;        
+    }
+
+    #main-doc {    
+        margin: 85px 24px 50px 24px;
+    }
+
+    .main-section header h2 {        
+        font-size: 1.75rem;        
+    }
+
+    footer {
+        display: none;
+    }
 }

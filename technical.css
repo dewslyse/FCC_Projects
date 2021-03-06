@@ -56,7 +56,10 @@ section p {
 .nav-link-section {
     margin-top: 50px;       
     max-width: 90%;      
-    padding: 0 15px 0 30px;     
+    padding: 0 15px 0 30px;  
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90%;   
 }
 
 .nav-link {
@@ -233,10 +236,15 @@ section li {
         align-items: flex-start;        
         margin-top: 0;         
         margin-left: auto; 
+        height: auto;
     }
 
     .nav-link {
         font-size: 1.4rem;
+    }
+
+    #navbar li {
+        margin: 10px 0;
     }
 
     #main-doc {    
@@ -289,10 +297,15 @@ section li {
         align-items: flex-start;        
         margin-top: 0;         
         margin-left: auto; 
+        height: auto;
     }
 
     .nav-link {
         font-size: 1.2rem;
+    }
+
+    #navbar li {
+        margin: 10px 0;
     }
 
     #main-doc {    

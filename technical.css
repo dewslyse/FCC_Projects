@@ -53,7 +53,7 @@ section p {
     padding-left: 20px;      
 }
 
-#nav-link-section {
+.nav-link-section {
     margin-top: 50px;       
     max-width: 90%;      
     padding: 0 15px 0 30px;     
@@ -88,7 +88,7 @@ section p {
     position: absolute;    
     right: 2rem;
     top: 1.5rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -200,6 +200,11 @@ section li {
         display: none;
     }
 
+    .hamburger-button {
+        display: flex;
+        position: fixed;
+    }
+
     #navbar {
         background-color: white;
         position: fixed;
@@ -216,8 +221,22 @@ section li {
         height: 70px;   
     }
 
-    #nav-link-section {
+    .nav-link-section {
         display: none;
+    }
+
+    .nav-link-section.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2a2f32;
+        align-items: flex-start;        
+        margin-top: 0;         
+        margin-left: auto; 
+    }
+
+    .nav-link {
+        font-size: 1.4rem;
     }
 
     #main-doc {    
@@ -240,6 +259,7 @@ section li {
 
     .hamburger-button {
         display: flex;
+        position: fixed;
     }
 
     #navbar {
@@ -257,14 +277,22 @@ section li {
         padding-left: 12px;      
     }
 
-    #nav-link-section {
+    .nav-link-section {
+        display: none;
+    }
+
+    .nav-link-section.active {
         display: flex;
         flex-direction: column;
         width: 100%;
         background-color: #2a2f32;
-        align-items: center;
-        margin-top: 0;
-        padding-right: 2.5rem;        
+        align-items: flex-start;        
+        margin-top: 0;         
+        margin-left: auto; 
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
     }
 
     #main-doc {    

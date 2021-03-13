@@ -381,8 +381,6 @@ footer {
         margin-right: auto;  
         margin-left: auto;     
         padding: 75px 0 50px 0;
-        
-
     }
 
 
@@ -445,6 +443,10 @@ footer {
         display: flex;
     }
 
+    .logo {
+        display: none;    
+    }
+   
     #nav-section a {            
         margin-left: 20px;          
     }

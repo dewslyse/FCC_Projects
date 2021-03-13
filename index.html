@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
         <title>dewslyse - Web developer | Problem solver</title>
         <script src="https://kit.fontawesome.com/861ecf43a0.js" crossorigin="anonymous"></script>
+        <script src="portfolio.js" defer></script>
     </head>
 
     <nav id="navbar">
@@ -20,7 +21,7 @@
                     <span class="logo"><i class="far fa-window-minimize fa-2x"></i></span>
                 </a>
             </div>
-            <div id="nav-section">
+            <div class="nav-section">
                 <a href="#welcome-section"><span class="nav-icon"><i class="far fa-user"></i></span>About</a>
                 <a href="#projects"><span class="nav-icon"><i class="fas fa-laptop-code"></i></span>Projects</a>
                 <a href="#contact"><span class="nav-icon"><i class="far fa-envelope"></i></span>Contact</a>                
@@ -28,11 +29,19 @@
         </div>
     </nav>
 
+    <a class="hamburger-button">
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+    </a>
+
     <section id="welcome-section">
+        <div class="wrapper">
         <img id="profile" src="https://avatars.githubusercontent.com/u/8092327?s=400&u=ca5f2cd59ffd639cb2d11a37aff0c66e8b4c4667&v=4" alt="image of dewslyse">
         <h2>Hi, I'm dewslyse</h2>
         <h1>Web Developer & <span class="text-gradient">Problem Solver</span></h1>
         <p>I solve problems... one line of <span class="neon-text"> &lt;code&gt;</span> at a time</p>
+        </div>
     </section>
 
     <section id="projects">
@@ -89,7 +98,24 @@
                         </a>
                     </div>
                 </div>            
-            </div>                         
+            </div> 
+            
+            <div class="project-tile tablet">
+                <div id="project-4">
+                    <h3>Tribute Page</h3>
+                    <img class="project-img" src="tribute-page.jpg" alt="project 4: tribute page">
+                    <div class="project-description-section">
+                        <p class="project-description">A tribute page in honour of Kofi Annan, UN secretary General 1997 - 2006</p>
+                        <div class="technologies">
+                            <span class="html5"><i class="fab fa-html5 fa-2x"></i></span>
+                            <span class="css"><i class="fab fa-css3-alt fa-2x"></i></span>                            
+                        </div>
+                        <a class="tile-button" href="https://codepen.io/dewslyse/full/bGwzgYR" target="_blank">       See solution
+                        </a>
+                    </div>
+                </div>            
+            </div> 
+            
         </div> 
         <a href="https://codepen.io/dewslyse" class="project-button" target="_blank">See more solutions  
                 <span><i class="fas fa-chevron-right"></i></span>             

@@ -63,7 +63,7 @@ nav {
     font-weight: 600; 
 }
 
-#nav-section,
+.nav-section,
 #copyright-section {
     display: flex;      
 }
@@ -73,7 +73,7 @@ nav {
     color: red;
 }
 
-#nav-section a {    
+.nav-section a {    
     display: block;    
     font-size: 1.3rem; 
     font-weight: 500;    
@@ -84,9 +84,27 @@ nav {
     padding: 22px 15px;     
 }
 
-#nav-section a:hover {    
+.nav-section a:hover {    
     color: #0a2a56;
     font-weight: 600;
+}
+
+.hamburger-button {
+    position: absolute;    
+    right: 2rem;
+    top: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;       
+}
+
+.hamburger-button .burger {
+    height: 3px;
+    width: 100%;
+    background-color: red;    
 }
 
 /* Welcome Section */
@@ -240,6 +258,10 @@ h3 {
     color: white;
 }
 
+.tablet {
+    display: none;
+}
+
 /* Contact section */
 #contact-section {
     width: 100%;   
@@ -317,4 +339,156 @@ footer {
     font-size: 1rem;
     color: white;   
     font-weight: 400; 
+}
+
+/*Media Querries*/
+@media (min-width: 961px) and (max-width: 1279px) {
+    #nav-elements,
+    #footer-elements {
+        margin: 0 20px;
+    }  
+}
+
+@media (max-width: 768px) {
+    #nav-elements,
+    #footer-elements {
+        margin: 0 20px;
+    }
+    
+    #logo-section,
+    #nav-section {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: flex;
+        position: fixed;
+    }
+
+    .nav-section {
+        display: none;
+    }
+
+    .nav-section.active {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 20vh;
+        background-color: whitesmoke;
+        align-items: flex-start;    
+        justify-content: center;    
+        margin-top: auto;         
+        margin-right: auto;  
+        margin-left: auto;     
+        padding: 75px 0 50px 0;
+        
+
+    }
+
+
+    #profile {
+        height: 180px;
+        width: auto;        
+    }
+
+    h1 {    
+        font-size: 2rem;    
+    }
+
+    .wrapper {
+        margin: 15px;
+    }
+
+    #welcome-section p,
+    #projects p,
+    #contact p {
+    font-size: 1.3rem; 
+    }
+
+    #projects h2 {
+        font-size: 1.8rem;
+        margin-bottom: -10px;
+    }
+
+    #project-grid-section {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    #projects {        
+        text-align: center;
+        margin: 50px 10px;
+    }
+
+    .tablet {
+        display: grid;
+    }
+    
+    #footer-logo-section {
+        display: none;
+    }
+
+    #footer-elements {
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+    #nav-elements,
+    #footer-elements {
+        margin: 0 20px;
+    }
+    
+    #logo-section {
+        display: flex;
+    }
+
+    #nav-section a {            
+        margin-left: 20px;          
+    }
+
+    #profile {
+        height: 200px;
+        width: auto;        
+    }
+
+    h1 {    
+        font-size: 2.2rem;    
+    }
+
+    #welcome-section p,
+    #projects p,
+    #contact p {
+    font-size: 1.4rem; 
+    }
+
+    #projects h2 {
+        font-size: 1.9rem;
+        margin-bottom: -10px;
+    }
+
+    #project-grid-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #projects {        
+        text-align: center;
+        margin: 50px 10px;
+    }
+
+    .tablet {
+        display: grid;
+    }
+    
+    #footer-logo-section {
+        display: none;
+    }
+
+    #footer-elements {
+        justify-content: center;
+    }
+
 }

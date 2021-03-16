@@ -10,3 +10,5 @@ The project provides the opportunity to practice HTML, plain CSS, visual design 
 * HTML
 * CSS 
 * JavaScript
+
+![Personal Portfolio Webpage screenshot](https://github.com/dewslyse/personal-portfolio-webpage/blob/main/portfolio-page.png)

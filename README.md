@@ -10,6 +10,8 @@ The project provides the opportunity to practice HTML, plain CSS, visual design 
 
 I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage) in order to pass.
 
+##### Click on the image below to view portfolio page
+
 <br>
 
 ## Technologies
@@ -19,4 +21,4 @@ I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn
 
 <br>
 
-![Personal Portfolio Webpage screenshot](https://github.com/dewslyse/personal-portfolio-webpage/blob/main/portfolio-page.png)
+[<img src="https://github.com/dewslyse/personal-portfolio-webpage/blob/main/portfolio-page.png" alt="portfolio page">](https://codepen.io/dewslyse/full/RwovMRZ)

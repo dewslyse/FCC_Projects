@@ -1,7 +1,7 @@
 # Personal Portfolio Webpage
 
 This is a web design project under **freeCodeCamp**'s
-[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/freecodecamp.svg' alt='freecodecamp' height='25'>](https://www.freecodecamp.org/)
+[<img src='freeCodeCampLogo.svg' alt='freecodecamp' height='20'>](https://www.freecodecamp.org/)
 [**responsive web design**](https://www.freecodecamp.org/learn/responsive-web-design/) curriculum
 
 The project provides the opportunity to practice HTML, plain CSS, visual design principles and concepts, Accessibility, and more.

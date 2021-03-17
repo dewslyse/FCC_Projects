@@ -21,4 +21,4 @@ I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn
 
 <br>
 
-[<img src="https://github.com/dewslyse/personal-portfolio-webpage/blob/main/portfolio-page.png" alt="portfolio page">](https://codepen.io/dewslyse/full/RwovMRZ)
+[<img src="https://github.com/dewslyse/personal-portfolio-webpage/blob/main/portfolio-page.png" alt="portfolio page" target="_blank">](https://codepen.io/dewslyse/full/RwovMRZ)

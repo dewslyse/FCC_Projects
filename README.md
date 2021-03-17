@@ -13,7 +13,7 @@ I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn
 <br>
 
 ## Technologies
-* [<img src='https://www.flaticon.com/svg/vstatic/svg/1216/1216733.svg?token=exp=1616001194~hmac=7c009330d0ad48bad63d71be0903062a' alt='freecodecamp' height='25'>] HTML
+* <img src='https://www.flaticon.com/svg/vstatic/svg/1216/1216733.svg?token=exp=1616001194~hmac=7c009330d0ad48bad63d71be0903062a' alt='HTML' height='20'> HTML
 * CSS 
 * JavaScript
 

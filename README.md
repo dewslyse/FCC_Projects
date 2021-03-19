@@ -10,7 +10,7 @@ The project provides the opportunity to practice HTML, plain CSS, visual design 
 
 I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) in order to pass.
 
-##### Click on the image below to view landing page
+##### Click on the image below to view _landing_ page
 
 <br>
 

@@ -8,7 +8,7 @@ The project provides the opportunity to practice HTML, plain CSS, visual design 
 
 <br>
 
-I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page) in order to pass.
+I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) in order to pass.
 
 ##### Click on the image below to view _documentation_ page
 

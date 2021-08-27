@@ -1,0 +1,212 @@
+body {
+    background: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;    
+    text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  margin: auto;
+  background: whitesmoke;
+  padding: 10px 0px 10px 0px;  
+  border-radius: 0 0 15px 15px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  margin: auto auto 20px ;
+  background: whitesmoke;
+  padding: 10px 0px 10px 0px;  
+  border-radius: 15px 15px 0 0;
+}
+
+#header-image {  
+  width: 100%;
+}
+
+#title {  
+  font-size: 2rem; 
+  margin: 40px;
+}
+
+@media (max-width: 640px) {
+  #title {    
+    font-size: 1.6rem;    
+  }
+}
+
+#description {
+  font-size: 1.1rem;
+  text-align: left;
+  margin: 30px 40px 20px 40px;
+}
+
+@media (max-width: 640px) {
+  #description {    
+    font-size: 1rem;    
+  }
+}
+
+.participation {
+  font-size: 1.1rem;
+  text-align: left;
+  margin: 0 40px 20px 40px;
+}
+
+@media (max-width: 640px) {
+  .participation {
+    font-size: 1rem;    
+  }
+}
+
+#survey-form {  
+  display: flex;
+  flex-direction: column;  
+}
+
+.form-content { 
+  text-align: left;
+  display: flex;  
+  flex-direction: column;  
+}
+
+#name {
+  margin: auto 40px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;   
+  display: flex;   
+}
+
+#name-label {  
+  display: flex; 
+  margin: 10px 40px 10px 40px; 
+  font-weight: 500;
+  text-align: left;
+}
+
+#gender-label,
+#covid-test-label,
+#hospital-label {
+  display: flex; 
+  margin: 40px 40px 15px 40px;   
+  font-weight: 500;
+}
+
+#aware-label {
+  display: flex; 
+  margin: 10px 40px 10px 40px;  
+  font-weight: 500;
+}
+
+#covid-symptoms,
+#safety {    
+  margin: 40px 40px 15px 40px;  
+  font-weight: 500;
+}
+
+.alignment {
+  display: flex;
+}
+
+.radio-option,
+.check-option {
+  display: inline-block;
+  margin: 0 10px 10px 40px;   
+}
+
+#email {
+  margin: auto 40px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif; 
+  display: flex;
+}
+
+#email-label {
+  display: flex; 
+  margin: 40px 40px 10px 40px;  
+  text-align: left;
+  font-weight: 500;
+}
+
+#number{
+  margin: auto 40px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif; 
+  display: flex;
+}
+
+#number-label {
+  display: flex; 
+  margin: 40px 40px 10px 40px;   
+  font-weight: 500;
+}
+
+#country {
+  margin: auto 40px;  
+  font-family: 'Open Sans', sans-serif; 
+  display: flex;
+  padding: 5px;
+}
+
+#dropdown {
+  margin: 0 40px 40px 40px;  
+  font-family: 'Open Sans', sans-serif; 
+  display: flex;
+  padding: 5px;
+}
+
+#country-label,
+#comment-label,
+#employment-label {
+  display: flex; 
+  margin: 40px 40px 10px 40px;  
+  text-align: left;
+  font-weight: 500;
+}
+
+.required {
+  color: red;
+  margin: 0 5px 0 5px;
+  font-size: 1.2rem;
+}
+
+.applicable {
+  color: black;
+  margin-left: 10px; 
+  font-size: 0.9rem;
+}
+
+.caption {
+  background-color: #33620e;
+  color: white;
+  font-size: 1.2rem;
+  padding: 7px 0 7px 40px;  
+  text-align: left;
+}
+
+#submit {
+  font-size: 1.2em;
+  padding: 0.7em;
+  margin: 0px 40px 30px 40px;  
+  color: white;
+  background-color: #33620e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#text-box {
+  min-height: 150px;
+  margin: auto 40px 30px 40px;
+  padding: 10px 15px 10px 15px;
+  font-family: 'Open Sans', sans-serif; 
+}

@@ -1,0 +1,322 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eeeee6; 
+    color: black; 
+    margin: 0;  
+}
+
+header {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+}
+
+section p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.top-nav {
+    height: 65px;
+    background-color: white;
+    color: black;
+    display: flex;     
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    align-content: center;      
+    text-align: center;  
+    position: relative;
+    width: 75%;  
+    margin-left: 25%;  
+}
+
+#navbar {
+    background-color: #2a2f32;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#nav-caption {
+    height: 65px;
+    background-color: white;    
+    font-size: 2.5rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-left: 20px;      
+}
+
+.nav-link-section {
+    margin-top: 50px;       
+    max-width: 90%;      
+    padding: 0 15px 0 30px;  
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90%;   
+}
+
+.nav-link {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
+    text-decoration: none; 
+    color: white;       
+    padding-bottom: 50px;    
+}
+
+.nav-link:hover {
+    color: #f54d27;    
+}
+
+#navbar li {
+    list-style: none;    
+    text-decoration: none;
+    color: white;    
+    margin: 20px 0;
+    /*border: solid 1pt white;*/
+}
+
+#navlogo {
+    margin-right: 10px;
+    color: #f54d27;
+}
+
+.hamburger-button {
+    position: absolute;    
+    right: 2rem;
+    top: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;       
+}
+
+.hamburger-button .burger {
+    height: 3px;
+    width: 100%;
+    background-color: black;    
+}
+
+#main-doc {    
+    margin: 30px 40px 30px 28%;
+}
+
+.main-section {
+    background-color: none;
+    margin: 50px 0;
+    padding-bottom: 10px
+}
+
+.main-section header h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: #f54d27;
+    font-weight: 500;
+}
+
+.main-section h3 {
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+samp {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+mark {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+    background-color: #d6d6d6;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+code {
+    background-color: #2a2f32;
+    color: white;
+    display: block;
+    line-height: 1.8;
+    border-radius: 5px;
+    margin: 0 10px;
+    white-space: pre-line;
+    padding: 10px 15px;
+    font-family: 'Source Code Pro', monospace;
+    word-break: break-all;
+    word-wrap: normal;
+}
+
+.code-justification {
+    margin-left: -150px;
+    margin-bottom: -20px;
+}
+
+section li {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+}
+
+.bottom-space {
+    margin-bottom: 30px;
+}
+
+#footer {
+    line-height: 50px;
+    width: 75%;
+    margin-left: 25%;    
+    background-color: white;
+    border-top: 0.5pt solid #2a2f32;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.footer-content {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px;
+    align-items: center;
+    margin: 0 60px;
+}
+
+.footer-content-left {
+    text-align: left;
+}
+
+.footer-content-right {   
+    text-align: right; 
+}
+
+/* Smaller Devices */
+@media (min-width: 640px) and (max-width: 992px) {
+    .top-nav {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: flex;
+        position: fixed;
+    }
+
+    #navbar {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 70px;        
+    }
+
+    #nav-caption {
+        font-size: 2rem;        
+        padding-left: 24px;   
+        height: 70px;   
+    }
+
+    .nav-link-section {
+        display: none;
+    }
+
+    .nav-link-section.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2a2f32;
+        align-items: flex-start;        
+        margin-top: 0;         
+        margin-left: auto; 
+        height: auto;
+    }
+
+    .nav-link {
+        font-size: 1.4rem;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
+
+    #main-doc {    
+        margin: 100px 30px 50px 30px;
+    }
+
+    .main-section header h2 {        
+        font-size: 1.9rem;        
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .top-nav {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: flex;
+        position: fixed;
+    }
+
+    #navbar {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 65px;        
+    }
+
+    #nav-caption {
+        font-size: 2rem;        
+        padding-left: 12px;      
+    }
+
+    .nav-link-section {
+        display: none;
+    }
+
+    .nav-link-section.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2a2f32;
+        align-items: flex-start;        
+        margin-top: 0;         
+        margin-left: auto; 
+        height: auto;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
+
+    #main-doc {    
+        margin: 85px 24px 50px 24px;
+    }
+
+    .main-section header h2 {        
+        font-size: 1.75rem;        
+    }
+
+    footer {
+        display: none;
+    }
+}

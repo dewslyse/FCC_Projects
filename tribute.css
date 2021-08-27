@@ -1,0 +1,176 @@
+body {
+  background: #d8d8d8;
+  font-family: "Helvetica Neue", Arial;  
+  text-align: center;
+}
+
+h3 {
+  background-color: #1c3e5e;
+  color: white;
+  font-size: 24px;
+  padding: 20px 20px 20px 60px; 
+  margin: 25px 0 0 200px; 
+  text-align: left; 
+}  
+
+@media (max-width: 768px) {
+  h3 {
+    margin: 25px 0 0 0; 
+    padding: 20px;
+    font-size: 18px;    
+  }
+}
+
+p {
+  font-size: 20px;
+  padding: 20px;
+  max-width: 760px;
+  margin: 20px auto 30px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+  
+@media (max-width: 768px) {
+  p {
+    font-size: 15px;
+  }
+}
+ 
+#main {
+  max-width: 1280px;
+  margin: auto;
+  background: white;
+  border-radius: 15px;
+  padding-top: 10px;
+}
+  
+#title {
+  color: #1C3E5E;  
+  font-size: 50px;
+}
+  
+@media (max-width: 768px) {
+  #title {
+  font-size: 40px;
+  }
+}
+  
+h2 {
+  background-color: #1c3e5e;
+  color: white;
+  font-size: 24px;
+  padding: 20px;   
+}
+  
+@media (max-width: 768px) {
+  h2 {
+  font-size: 18px;
+  }
+}
+  
+#headline2 {
+  background-color: #000;
+  color: white;
+  font-size: 20px;
+  padding: 20px; 
+  font-weight: lighter;    
+}
+  
+@media (max-width: 768px) {
+  #headline2 {
+  font-size: 14px;
+  }
+}
+  
+#img-div {
+  padding-bottom: 0px;
+  margin: 0px;
+}
+  
+#image {
+  max-width: 100%;
+  height: auto;  
+  display: block;
+  margin: 0 auto;
+}
+  
+#img-caption { 
+  padding: 10px;
+  background-color: black;
+  color: white;  
+}
+  
+@media (max-width: 768px) {
+  #img-caption {
+  font-size: 14px;
+  }
+}
+  
+#tribute-info {
+  font-size: 20px;
+  padding: 20px;
+  max-width: 760px;
+  margin: 20px auto 30px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+  
+@media (max-width: 768px) {
+  #tribute-info {
+  font-size: 15px;
+  }
+}
+  
+#tribute-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 3px 5px; 
+}
+  
+@media (max-width: 768px) {
+  #tribute-link {
+  font-size: 16px;
+  }
+}
+  
+#quote-box {
+  background: #000;
+  padding: 20px 60px 20px 60px;
+  padding-top: 20px;
+  color: white;
+  margin-bottom: 40px;
+  margin: 0px;
+}
+  
+#quote {
+  font-family: "Italianno", sans-serif;
+  font-size: 50px; 
+  line-height: 1.5;
+  padding: 0 80px 0px 80px;
+  text-align: center;
+}
+  
+@media (max-width: 768px) {
+  #quote {
+  font-size: 32px;
+  padding-bottom: 0px;
+  }
+}
+  
+#quote-name {
+  text-align: center;
+}
+
+footer {
+  padding: 30px;
+}
+  
+@media (max-width: 768px) {
+  footer {
+  font-size: 14px;
+  }
+}
+  

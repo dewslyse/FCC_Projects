@@ -1,0 +1,486 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {    
+    font-size: 2.5rem;    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: whitesmoke; 
+    z-index: 5;   
+}
+
+#navbar {    
+    height: 75px;
+    display: flex; 
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+#nav-elements {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-section {
+    display: flex;
+    background-color: #040d21;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: default;         
+}
+
+#logo-section:hover {
+    background-color: #0a2a56 /*#178ca4*/;
+}
+
+#logo-section a {
+    text-decoration: none;
+}
+
+.logo {
+    color: red;     
+}
+
+#logo-text {
+    font-size: 2rem;
+    color: white;   
+    font-weight: 600; 
+}
+
+.nav-section {
+    display: flex;      
+}
+
+.nav-icon {
+    margin-right: 10px;
+    color: red;
+}
+
+.nav-section a {    
+    display: block;    
+    font-size: 1.3rem; 
+    font-weight: 500;    
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;   
+    text-align: center;   
+    padding: 22px 15px;     
+}
+
+.nav-section a:hover {    
+    color: #0a2a56;
+    font-weight: 600;
+}
+
+.hamburger-button {
+    position: absolute;    
+    right: 2rem;
+    top: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;       
+}
+
+.hamburger-button .burger {
+    height: 3px;
+    width: 100%;
+    background-color: red;    
+}
+
+/* Welcome Section */
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    /*margin-top: 75px;*/
+    background-color: #040d21;    
+    color: white;     
+}
+
+#profile {
+    border-radius: 50%;
+    border: 2.5px solid red;
+    height: 200px;
+    width: 200px;
+    margin-top: 75px;
+}
+
+#welcome-section p,
+#projects p,
+#contact p {
+    font-size: 1.5rem;    
+}
+
+.text-gradient {    
+    background: linear-gradient(-70deg, #3bf0e4, #bca1f7);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.neon-text {
+    font-weight: 500;
+    color: yellowgreen;
+}
+
+/* Projects-Seciton */
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: -10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+#project-grid-section {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto;    
+    max-width: 1280px;
+    width: 100%; 
+    margin-top: 30px; 
+    margin-bottom: 50px;    
+}
+
+.project-tile {    
+    padding: 0;
+    margin: 20px;
+    background-color: #0a2a56 /*#178ca4*/;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+#project-1,
+#project-2,
+#project-3,
+#project-4 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.project-img {
+    width: 100%;
+    border-top: 2px solid red;
+    border-bottom: 3px solid red;
+}
+
+.project-description-section {
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+.project-description {
+    font-size: 1rem !important;
+    color: white;
+    font-style: italic;
+    font-weight: normal;    
+}
+
+.technologies {
+    margin: 30px;
+}
+
+.html5 {
+    margin: 0 10px;
+    color: #F16529;
+}
+
+.css {
+    margin: 0 12px;
+    color: #2965f1;
+}
+
+.javascript {
+    margin: 0 10px;
+    color: #F0DB4F;
+}
+
+.project-button,
+.tile-button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 1rem;
+    border: 2px solid red;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    color: black;
+}
+
+.tile-button {
+    margin-bottom: 5px;
+    background-color: whitesmoke;      
+    display: inline-block;   
+    color: #072a40;  
+}
+
+.project-button:hover,
+.tile-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.tablet {
+    display: none;
+}
+
+/* Contact section */
+#contact-section {
+    width: 100%;   
+    height: 320px;
+    text-align: center;
+    background-color: #0a2a56 /* #24292e #040d21*/;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: -60px 0 0 0;    
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-top: -10px;
+}
+
+.text-gradient-2 {    
+    background: linear-gradient(-70deg, #db469f, #2188ff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#contact-container { 
+    position:relative; 
+    top: 30px;   
+    max-width: 1280px;
+    width: 80%;
+    background-color: #040d21;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.contact-section-inner {
+    margin-top: 70px;
+}
+
+#profile-link {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2.5px solid red;
+    border-radius: 100%;    
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#profile-link:hover {
+    color: black;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    align-items: center;
+    height: 65px;
+}
+
+#copyright-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-text-focus {
+  font-weight: bold;
+}
+
+/*Media Querries*/
+@media (min-width: 961px) and (max-width: 1279px) {
+    #nav-elements {
+        margin: 0 20px;
+    }  
+}
+
+@media (max-width: 768px) {
+    #nav-elements {
+        margin: 0 20px;
+    }
+    
+    #logo-section,
+    #nav-section {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: flex;
+        position: fixed;
+        z-index: 7;
+    }
+
+    .nav-section {
+        display: none;
+    }
+
+    .nav-section.active {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 20vh;
+        background-color: whitesmoke;
+        align-items: flex-start;    
+        justify-content: center;    
+        margin-top: auto;         
+        margin-right: auto;  
+        margin-left: auto;     
+        padding: 75px 0 50px 0;
+        z-index: 9;
+    }
+
+    #profile {
+        height: auto;
+        width: 30%;        
+    }
+
+    h1 {    
+        font-size: 2rem;    
+    }
+
+    .wrapper {
+        margin: 15px;
+    }
+
+    #welcome-section p,
+    #projects p,
+    #contact p {
+    font-size: 1.3rem; 
+    }
+
+    #projects h2 {
+        font-size: 1.8rem;
+        margin-bottom: -10px;
+    }
+
+    #project-grid-section {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    #projects {        
+        text-align: center;
+        margin: 50px 10px;
+    }
+
+    .tablet {
+        display: grid;
+    }
+    
+    #footer-logo-section {
+        display: none;
+    }
+
+    #footer-elements {
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+    #nav-elements {
+        margin: 0 20px;
+    }
+    
+    #logo-section {
+        display: flex;
+    }
+
+    .logo {
+        display: none;    
+    }
+   
+    #nav-section a {            
+        margin-left: 20px;          
+    }
+
+    #profile {
+        height: 200px;
+        width: auto;        
+    }
+
+    h1 {    
+        font-size: 2.2rem;    
+    }
+
+    #welcome-section p,
+    #projects p,
+    #contact p {
+    font-size: 1.4rem; 
+    }
+
+    #projects h2 {
+        font-size: 1.9rem;
+        margin-bottom: -10px;
+    }
+
+    #project-grid-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #projects {        
+        text-align: center;
+        margin: 50px 10px;
+    }
+
+    .tablet {
+        display: grid;
+    }
+}

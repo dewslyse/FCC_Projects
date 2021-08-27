@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;  
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 0px;   
+    line-height: 0.25;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+}
+
+/* SEPARATORS */
+#subscribe-separator,
+#produce-separator {
+    width: 110px;
+    margin: auto;
+    background-color: #84bb29;
+    height: 4px;
+    border: none; 
+}
+
+/* BUTTONS */
+#hero-button,
+#produce-button,
+#farm-button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    background: #84bb29;
+    color: #fff;  
+    font-size: 1rem;
+    border: none; 
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+#header {  
+    width: 100%;
+    background-color: #f1f1f1;
+    top: 0;  
+    position:fixed; 
+    z-index: 2;
+}
+
+/* NAV SECTION */
+#nav-bar {
+    width: 100%;
+    max-width: 1280px;
+    height: 100px;
+    background-color: #f1f1f1;
+    margin: auto;
+    display: flex;  
+    justify-content: space-between;
+    cursor: default;
+    align-items: center;
+}
+
+#logo-section {
+    display: flex;
+    position: relative;
+    left: -20px;   
+}
+
+#header-img {    
+    max-width: 280px;
+    height: auto;   
+}
+
+#header-img-small {
+    width: auto;
+    max-height: 75px; 
+    display: none;
+}
+
+.menu-section ul {
+    display: flex;  
+    margin: 0;
+    padding: 0;    
+}
+
+.menu-section li {
+    list-style: none;
+}
+
+.menu-section li a {
+    text-decoration: none;
+    display: block;    
+}
+
+/* MENU ITEMS */
+.nav-link {
+    display: inline-flex;  
+    text-decoration: none;
+    margin: 0 0 0 40px;
+    text-align: left;  
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.nav-link:hover {    
+    color: #84bb29; 
+}
+
+.hamburger-button {
+    position: absolute;    
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;   
+}
+
+.hamburger-button .burger {
+    height: 3px;
+    width: 100%;
+    background-color: black;    
+}
+
+/* HERO SECTION */
+#hero-section {
+    position: relative;
+    background-position: 80%;   
+    background-image: url(Shopping-cart.png);
+    background-color: black;  
+    background-repeat: no-repeat;
+    padding-top: 65px;
+}
+
+.hero {
+    height: 80vh;
+    min-height: 500px;
+    max-height: 864px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto; 
+    width: 100%;  
+}
+
+.hero-left-content {    
+    min-width: 0;
+    width: 50%;      
+}
+
+.main-hero-title {
+    line-height: 1.25;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;   
+}
+
+#title-separator {
+    width: 110px;
+    margin-left: 0;
+    background-color: #84bb29;
+    height: 3px;
+    border: none;  
+}
+
+#button-wrapper {
+    margin: 80px 0 50px 0;   
+}
+
+#hero-image {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* OUR FARM SECTION */
+.our-farm-section {
+    background-color: #fff;      
+}
+
+.icon-box-section {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+}
+
+.features-section {
+    display: grid;      
+    grid-template-columns: 305px 305px 305px 305px;
+    grid-template-rows: 180px;
+    grid-column-gap: 20px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 20px 0;  
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;    
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 30vw;
+    color: #84bb29;
+}
+
+.icon-background {
+    background-color: rgba(86,178,89,.2);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 150px;
+    width: 65vw;
+    color: #000;
+}
+
+.feature-1,
+.feature-2,
+.feature-3,
+.feature-4 {   
+    border-radius: 10px;
+    margin: 20px 0;    
+}
+
+#our-farm-container {  
+    background-color: #f7f7e8;
+    padding: 70px 0; 
+    display: flex;
+    align-items: center;
+    flex-direction: row;  
+}
+
+.farm-container {
+    max-width: 1280px;
+    margin: auto; 
+    width: 100%; 
+    display: flex;
+    align-items: center;
+}  
+
+#farm-button-wrapper {
+    margin: 10px 0;  
+}
+
+#farm-separator {
+    width: 110px;
+    margin: 0;
+    background-color: #84bb29;
+    height: 4px;
+    border: none; 
+}
+
+.our-farm-text {
+    min-width: 0;
+    width: 90%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+}
+
+#farm-text-style {
+    margin: 20px 20px 40px 0;
+    line-height: 1.5;
+    font-size: 1.1rem;  
+}
+
+.our-farm-video {
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+    border-bottom: 4px solid #84bb29;  
+    padding-bottom: 5px; 
+}
+
+#video {
+    width: 640px;
+    height: 360px;  
+    margin-bottom: 3px;
+    border: 0px;
+}  
+
+/* PRODUCE SECTION */
+#our-produce-section {    
+    text-align: center;  
+    background-color: #fff;
+    color: #000;
+    padding: 70px 0 20px 0;
+}
+
+.produce-section {
+    display: grid;  
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 300px;
+    grid-column-gap: 5%;
+    max-width: 1280px;
+    margin: auto;  
+    align-items: center;
+    justify-items: center;
+}
+
+.produce-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;    
+}
+
+#image-1,
+#image-2,
+#image-3 {
+    height: 200px;
+    border-radius: 50%;
+}
+
+#produce-button-wrapper {
+    margin: 50px 0;  
+}
+
+/* SUBCRIPTION SECTION */
+#subscription-section {
+    text-align: center;  
+    background-color: #561e54;
+    color: #fff;
+    padding: 70px 0;
+}
+
+#quote-wrapper {
+    margin: 20px 0 40px;
+}
+
+#form {
+    display: inline-flex;
+}
+
+#email {
+    margin: auto;
+    padding: 10px 50px 10px 10px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    border: solid #84bb29 1.5px;
+    border-radius: 7px;
+}
+
+#submit {
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin-left: 5px;  
+    color: white;
+    background-color: #84bb29;  
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    border: solid #84bb29 1.5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+#footer {
+    line-height: 50px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-top: 1pt solid #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-content {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px;
+    align-items: center;
+}
+
+.footer-content-left {
+    text-align: left;
+}
+
+.footer-content-right {   
+    text-align: right; 
+}
+
+/* MEDIA QUERRIES */
+@media (max-width: 640px) {
+    h2 {
+        font-size: 1.8rem;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    /* Header section */
+    #header-img {        
+        display: none;
+    }
+    #header-img-small {
+        width: auto;
+        max-height: 75px; 
+        display: flex;
+    }
+    #nav-bar {
+        width: 90%;  
+        height: 80px;           
+    }
+    .hamburger-button {
+        display: flex;
+    }
+    .menu-section {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 65px;
+        height: 100%;
+        width: 75vw;  
+        margin-right: -50px;          
+    }
+    .menu-section ul {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 40px;               
+    }
+    .menu-section li {
+        padding: 1rem;
+        background-color: #f1f1f1;   
+        width: 100%;  
+    }
+    .menu-section.active {
+        display: flex;
+    }
+    .nav-link {
+        display: flex;          
+        margin-right: 50px;
+        text-align: right;         
+        font-weight: 500;
+        font-size: 1.2rem;
+    } 
+
+    /* Hero section */
+    .container {
+        width: 90%;        
+    }
+    #hero-section {        
+        background-size: 45%;         
+        background-position-x: center;    
+        background-position-y: 95%;  
+    }
+    .hero {
+        height: 60vh;
+    }
+    .hero-left-content {
+        width: 100%;
+        margin-top: -120px;        
+    }    
+    .main-hero-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    #title-separator {
+        margin: auto;
+    }
+    #hero-button {        
+        margin: 30px auto 0 auto;
+        width: 100%;
+        font-size: 0.9rem;       
+    }
+    #button-wrapper {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 2rem;        
+    }
+    
+    /* Icon box section */
+    .icon-box-section {
+        justify-content: center;
+        padding: 30px 0;
+        margin-top: 50px;
+    }
+    .features-section {            
+        display: grid;
+        grid-template-columns: 100%; 
+        width: 100%;
+        padding: 0;   
+        margin-right: auto;
+        margin-left: auto; 
+    } 
+    .feature-2,
+    .feature-3,
+    .feature-4 {
+        margin-top: 40px;        
+    }
+    .feature-1 {
+        margin: 0;
+    }
+    .icon-box {
+        display: grid;
+        justify-content: center;        
+    }
+    .icon {
+        display: grid;        
+        width: auto;
+    }  
+    .description {        
+        flex-direction: column;
+        height: 100px;
+        width: 100%;        
+    }
+    .description h3 {
+        font-size: 1.3rem;
+        line-height: 1.2;          
+        margin-top: 5px;       
+    }
+    .description p {
+        display: flex;
+        margin-top: 10px;         
+        margin: 0 auto;  
+    }    
+    .icon.icon-background {
+        padding: 15px;        
+    }
+
+    /* Our Farm section */
+    #farm-separator {
+        margin: auto;
+    }
+    .farm-container {          
+        align-items: center;
+        flex-direction: column;          
+        width: 90%;
+        justify-content: center;        
+    }
+    .our-farm-text {
+        width: 100%;
+        text-align: center;
+    }
+    #farm-text-style {
+        margin: auto 12px 20px;
+        font-size: 1rem;
+    }
+    .our-farm-video {
+        margin-top: 50px;
+    }
+
+    /* Produce section */
+    .produce-section {        
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 30px;            
+    }
+    #image-3 {
+        height: 180px;
+        border-radius: 50%;
+    }
+    .produce-text {
+        font-size: 1.2rem;
+        margin-top: -20px;
+    }
+
+    /* Subscription section */
+    #quote-wrapper {        
+        margin: 30px 40px;
+    }
+    #form {  
+        display: flex;      
+        flex-direction: column;              
+    }
+    #email {
+        text-align: center;
+        padding: 10px 30px;  
+        box-sizing: border-box;    
+        width: 60%;    
+    }
+    #submit { 
+        margin: 30px auto 0 auto;
+        width: 40%;
+        text-align: center;
+        padding: 10px;
+    }
+    /*footer section*/
+    .footer-content {        
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 50px;
+        align-items: center;
+    }
+    .footer-content-left,
+    .footer-content-right {
+        text-align: center;
+    }   
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    h2 {
+        font-size: 2rem;        
+    }
+
+    /* Header section */
+    #header-img {
+        max-width: 240px;
+    }
+    #nav-bar {
+        width: 90%;       
+    }
+    .hamburger-button {
+        display: flex;
+    }
+    .menu-section {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 65px;
+        height: 100%;
+        width: 50vw;  
+        margin-right: -50px;          
+    }
+    .menu-section ul {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 40px;               
+    }
+    .menu-section li {
+        padding: 1rem;
+        background-color: #f1f1f1;   
+        width: 100%;  
+    }
+    .menu-section.active {
+        display: flex;
+    }
+    .nav-link {
+        display: flex;          
+        margin-top: 5px;
+        margin-right: 25px;
+        text-align: right;         
+        font-weight: 500;
+        font-size: 1.2rem;
+    }        
+
+    /* Hero section */
+    #hero-section {
+        position: relative;
+        background-size: 45%;
+        background-position: 95%;        
+    }
+    .hero {
+        height: 60vh;
+    }
+    .container {
+        width: 90%;
+    }
+    .main-hero-title {
+        font-size: 2.5rem;
+    }
+
+    /* Icon box section */
+    .icon-box-section {        
+        justify-content: center;
+        padding: 30px 0;
+        margin-top: 50px;
+    }
+    .features-section {            
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto auto;
+        width: 80%;
+        padding: 0;   
+        margin-right: auto;
+        margin-left: auto; 
+    }    
+    .icon-box {
+        display: grid;
+        justify-content: center;        
+    }
+    .icon {
+        display: grid;        
+        width: auto;
+    }  
+    .description {        
+        flex-direction: column;
+        height: 100px;
+        width: 100%;        
+    }
+    .description h3 {
+        font-size: 1.3rem;
+        line-height: 1.2;          
+        margin-top: 5px;       
+    }
+    .description p {
+        display: flex;
+        margin-top: 10px;         
+        margin: 0 auto;  
+    }    
+    .icon.icon-background {
+        padding: 20px;        
+    }
+
+    /* Our Farm section */
+    #farm-separator {
+        margin: auto;
+    }
+    .farm-container {          
+        align-items: center;
+        flex-direction: column;          
+        width: 90%;
+        justify-content: center;        
+    }
+    .our-farm-text {
+        width: 100%;
+        text-align: center;
+    }
+    #farm-text-style {
+        margin: auto 24px 20px;
+    }
+    .our-farm-video {
+        margin-top: 50px;        
+    }
+    #video {
+        width: 100%;
+    }
+
+    /* Produce section */
+    .produce-section {
+        margin-top: -40px;
+    }
+    #image-3 {
+        height: 180px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    .produce-text {
+        font-size: 1.3rem;
+        margin-top: -20px;
+    }
+
+    /* Subscription section */
+    #quote-wrapper {        
+        margin: 30px 40px;
+    }
+    #form {  
+        display: flex;      
+        flex-direction: column;              
+    }
+    #email {
+        text-align: center;
+        padding: 10px 30px;  
+        box-sizing: border-box;    
+        width: 60%;    
+    }
+    #submit { 
+        margin: 30px auto 0 auto;
+        width: 30%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /*footer section*/
+    .footer-content {        
+        margin: 0 24px;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1279px) {
+    h2 {
+        font-size: 2rem;        
+    }
+    /* Header Section */
+    #nav-bar {
+        width: 90%;        
+    }    
+
+    /* Hero Section */
+    #hero-section {
+        background-position: 90%;
+    }
+    .container {
+        width: 90%;
+    }
+
+    /* Icon box section */
+    .icon-box-section {        
+        justify-content: center;
+        padding: 30px 0;
+        margin-top: 50px;
+    }
+    .features-section {            
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%; 
+        grid-template-rows: auto auto;
+        width: 80%;
+        padding: 0;   
+        margin-right: auto;
+        margin-left: auto; 
+    }    
+    .icon-box {
+        display: grid;
+        justify-content: center;        
+    }
+    .icon {
+        display: grid;        
+        width: auto;
+    }  
+    .description {        
+        flex-direction: column;
+        height: 100px;
+        width: 100%;        
+    }
+    .description h3 {
+        font-size: 1.3rem;
+        line-height: 1.2;          
+        margin-top: 5px;       
+    }
+    .description p {
+        display: flex;
+        margin-top: 10px;         
+        margin: 0 auto;  
+    }    
+    .icon.icon-background {
+        padding: 20px;        
+    }
+
+    /* Our Farm section */
+    #farm-separator {
+        margin: auto;
+    }
+    .farm-container {          
+        align-items: center;
+        flex-direction: column;          
+        width: 90%;
+        justify-content: center;        
+    }
+    .our-farm-text {
+        width: 100%;
+        text-align: center;
+    }
+    #farm-text-style {
+        margin: auto 24px 20px;
+    }
+    .our-farm-video {
+        margin-top: 50px;        
+    }
+    #video {
+        width: 100%;
+    }
+}

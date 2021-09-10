@@ -6,7 +6,9 @@ This is a web design project under **freeCodeCamp**'s
 
 The project provides the opportunity to practice HTML, plain CSS, visual design principles and concepts, Accessibility, and more.
 
-<br>
+[Click to view project](https://dewslyse.github.io/FCC_Projects/product-landing-page/)
+
+<!-- <br>
 
 I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) in order to pass.
 
@@ -21,4 +23,4 @@ I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn
 
 <br>
 
-[<img src="https://github.com/dewslyse/personal-portfolio-webpage/blob/main/product-page.jpg" alt="portfolio page">](https://codepen.io/dewslyse/full/NWbpYaX)
+[<img src="https://github.com/dewslyse/personal-portfolio-webpage/blob/main/product-page.jpg" alt="portfolio page">](https://codepen.io/dewslyse/full/NWbpYaX) -->

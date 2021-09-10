@@ -1,15 +1,15 @@
-<<<<<<< HEAD
+
 # FCC_Projects
-=======
+
 # Personal Portfolio Webpage
 
 This is a web design project under **freeCodeCamp**'s
 [<img src='freeCodeCampLogo.svg' alt='freecodecamp' height='20'>](https://www.freecodecamp.org/)
 [**responsive web design**](https://www.freecodecamp.org/learn/responsive-web-design/) curriculum
 
-The project provides the opportunity to practice HTML, plain CSS, visual design principles and concepts, Accessibility, and more.
+The project provides the opportunity to practice HTML, plain CSS, visual design principles and concepts, accessibility, and more.
 
-<br>
+<!-- <br>
 
 I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage) in order to pass.
 
@@ -25,4 +25,4 @@ I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn
 <br>
 
 [<img src="https://github.com/dewslyse/personal-portfolio-webpage/blob/main/portfolio-page.png" alt="portfolio page">](https://codepen.io/dewslyse/full/RwovMRZ)
->>>>>>> r1remote/main
+>>>>>>> r1remote/main -->

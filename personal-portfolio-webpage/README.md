@@ -9,6 +9,8 @@ This is a web design project under **freeCodeCamp**'s
 
 The project provides the opportunity to practice HTML, plain CSS, visual design principles and concepts, accessibility, and more.
 
+[Click to view project](https://dewslyse.github.io/FCC_Projects/personal-portfolio-webpage/)
+
 <!-- <br>
 
 I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage) in order to pass.

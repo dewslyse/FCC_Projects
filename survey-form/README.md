@@ -1,12 +1,16 @@
+# FCC_Projects
+
 # Survey Form
 
 This is a web design project under **freeCodeCamp**'s
-[<img src='https://github.com/dewslyse/personal-portfolio-webpage/blob/main/freeCodeCampLogo.svg' alt='freecodecamp' height='20'>](https://www.freecodecamp.org/)
+[<img src='https://github.com/dewslyse/FCC_Projects/blob/main/personal-portfolio-webpage/freeCodeCampLogo.svg' alt='freecodecamp' height='20'>](https://www.freecodecamp.org/)
 [**responsive web design**](https://www.freecodecamp.org/learn/responsive-web-design/) curriculum
 
-The project provides the opportunity to practice HTML, plain CSS, visual design principles and concepts, Accessibility, and more.
+The project provides the opportunity to practice HTML, plain CSS, visual design principles and concepts, accessibility, and more.
 
-<br>
+[Click to view project](https://dewslyse.github.io/FCC_Projects/survey-form/)
+
+<!-- <br>
 
 I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form) in order to pass.
 
@@ -21,4 +25,4 @@ I had to fulfill these [Project requirements](https://www.freecodecamp.org/learn
 
 <br>
 
-[<img src="https://github.com/dewslyse/personal-portfolio-webpage/blob/main/survey-form.jpg" alt="survey form">](https://codepen.io/dewslyse/full/jOVOeJa)
+[<img src="https://github.com/dewslyse/personal-portfolio-webpage/blob/main/survey-form.jpg" alt="survey form">](https://codepen.io/dewslyse/full/jOVOeJa) -->

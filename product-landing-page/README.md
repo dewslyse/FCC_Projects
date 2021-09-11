@@ -1,7 +1,7 @@
 # Product Landing Page
 
 This is a web design project under **freeCodeCamp**'s
-[<img src='https://github.com/dewslyse/personal-portfolio-webpage/blob/main/freeCodeCampLogo.svg' alt='freecodecamp' height='20'>](https://www.freecodecamp.org/)
+[<img src='freeCodeCampLogo.svg' alt='freecodecamp' height='20'>](https://www.freecodecamp.org/)
 [**responsive web design**](https://www.freecodecamp.org/learn/responsive-web-design/) curriculum
 
 The project provides the opportunity to practice HTML, plain CSS, visual design principles and concepts, Accessibility, and more.
